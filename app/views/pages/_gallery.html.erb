@@ -1,0 +1,106 @@
+<div class="gallery">
+    <div class="gallery-image">
+      <%= image_tag "Aussen1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(1)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Aussen2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(2)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Wohnzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(3)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Wohnzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(4)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Wohnzimmer3.jpg", class: "cursor", :onClick  => "openModal();currentSlide(5)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Küche1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(6)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Küche2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(7)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Schlafzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(8)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Schlafzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(9)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Kinderzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(10)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Kinderzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(11)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Wannenbad.jpg", class: "cursor", :onClick  => "openModal();currentSlide(12)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Gallerie1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(13)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Gallerie2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(14)" %>
+    </div>
+    <div class="gallery-image" id="hidden-tablet">
+      <%= image_tag "Gallerie3.jpg", class: "cursor", :onClick  => "openModal();currentSlide(15)" %>
+    </div>
+    <div class="gallery-image">
+      <%= image_tag "Gallerie4.jpg", class: "cursor", :onClick  => "openModal();currentSlide(16)" %>
+    </div>
+  <div id="modal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="modal-image">
+        <%= image_tag "Aussen1.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Aussen2.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Wohnzimmer1.jpg" %>
+      </div>    
+      <div class="modal-image">
+        <%= image_tag "Wohnzimmer2.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Wohnzimmer3.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Küche1.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Küche2.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Schlafzimmer1.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Schlafzimmer2.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Kinderzimmer1.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Kinderzimmer2.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Wannenbad.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Gallerie1.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Gallerie2.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Gallerie3.jpg" %>
+      </div>
+      <div class="modal-image">
+        <%= image_tag "Gallerie4.jpg" %>
+      </div>
+          <a class="prev" onclick="plusImages(-1)">&#10094;</a>
+          <a class="next" onclick="plusImages(1)">&#10095;</a>
+      </div>
+    </div>
+  </div>
+</div>
