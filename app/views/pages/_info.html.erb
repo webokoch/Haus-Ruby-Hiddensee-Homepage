@@ -1,0 +1,57 @@
+<section id="info">
+    <div class="title">
+        <h2>Haus Ruby</h2>
+    </div>
+    <div class="content">
+      <p class="info-text">Haus Ruby ist Teil einer ehemaligen kleinen Ferienanlage im Süden Vittes. Auf dem Gelände befinden sich drei Gebäude mit jeweils vier
+          Reihenhäusern. Haus Ruby ist ein Richtung Wesyten ausgerichtetes Reihenendhaus, etwas zurückversetzt von der Strasse und grössenteils 
+          umgeben von einer Hecke. 
+      </p>
+      <div class="house">
+        <button data-id="1" class="house-btn active" onclick="switchText(1)">Terrassen</button>
+        <button data-id="2" class="house-btn" onclick="switchText(2)">Erdgeschoss</button>
+        <button data-id="3" class="house-btn" onclick="switchText(3)">Obergeshoss</button>
+        <button data-id="4" class="house-btn" onclick="switchText(4)">Galerie</button>
+      </div>
+      <div class="info-details">
+        <div data-id="1" class="info-card show">
+          <%= image_tag 'Aussen1.jpg' , class: 'image-floated'%>
+          <p class="info-text">
+          Auf den zwei Terrassen, ausgerichtet nach Süden und Westen, lässt sich den ganzen Tag über die Sonne geniessen. Beginnen Sie Ihren
+          Tag mit einem Früstück in der Sonne. Zum Relaxen im Laufe des Tages stehen Sonnenliegen und -stühle zu Verfügung. Eine Hecke umschliesst 
+          den Grossteil der Terrassen und bietet angenehme Privatssphäre. Und sollte es Ihnen in der Sonne doch zu heiss werden, sind zwei grosse Sonnenschirm 
+          als Schattenspender vorhanden. Lassen Sie den Abend bei einem Barbeque mit Drinks auf der Terrasse beim Sonnenuntergang ausklingen.
+          </p>
+        </div>
+        <div data-id="2" class="info-card">
+          <%= image_tag 'Wohnzimmer2.jpg' , class: 'image-floated'%>
+          <p class="info-text">
+          Im Erdgeschoss bietet Haus Ruby einen Wohn-Ess-Bereich mit einem Esstisch für sechs Personen, einem grosses Sofa, ein Smart-TV und eine kleine Bluetooth-Musikanlage.
+          Eine seperate Küche ausgesttatet mit einem Induktionsherd, einem Kühlschrank mit kleinem Gefrierfach, einer Backofen-Mikrowellen-Kombination, Toaster, 
+          Kaffemaschine und Wasserkocher. <br>
+          Zusätzlich befindet sich im Erdgeschoss noch eines der zwei Bäder. In diesem Falle ein Tageslicht-Duschbad mit Waschbecken, WC und Dusche.
+          </p>
+        </div>
+        <div data-id="3" class="info-card">
+          <%= image_tag 'Schlafzimmer1.jpg' , class: 'image-floated'%>
+          <p class="info-text">
+          Im Obergeschoss befinden sich die beiden Schlafzimmer und ein weiteres Bad.
+          Das grössere Schlafzimmer ist Richtung Westen ausgerichtet. Hier finden Sie ein grosses Doppelbett (1,80mx2,00m) sowie eine Kommode 
+          und einen Kliederschrank. Zusätzlich steht ein Kinderreisebett zu Verfügung. 
+          Im zweiten Schlafzimmer, ausgerichtet nach Norden, sind zwei Betten (jeweils (0,90mX1,90m)) als Kojen unter der Dachschräge anbgebracht 
+          und erfreuen sich vor allem bei den jüngeren Gästen grosser Beliebtheit. <br>
+          Auch im Obergeschoss befindet sich ein Tageslicht-Bad. Ausgestattet mit Waschbecken, Badewanne und WC.
+          </p>
+        </div>
+        <div data-id="4" class="info-card">
+          <%= image_tag 'Gallerie1.jpg' , class: 'image-floated'%>
+          <p class="info-text">
+          Den krönenden Abschluss von Haus Ruby bietet eine offene Galerie unter dem Dach. Von hier aus haben Sie einen wunderbaren Blick 
+          auf die Ostsee. <br>
+          Je nach Anzahl der Gäste, kann die Galerie als Schlafplatz (1,40mx2,00m) oder als Rückzugsort zum Lesen und Entspannen 
+          genutzt werden. 
+          </p>
+        </div>        
+      </div>
+  </div>
+</section>
