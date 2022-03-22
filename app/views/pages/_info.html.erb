@@ -55,3 +55,16 @@
       </div>
   </div>
 </section>
+
+<script>
+  function switchText(n) {
+    var buttons = document.getElementsByClassName("house-btn")
+    var texts = document.getElementsByClassName("info-card")
+
+    Array.from(buttons).map(button => 
+        button.dataset.id === `${n}` ? button.classList.add("active") : button.classList.remove("active"))
+
+    Array.from(texts).map(text => 
+        text.dataset.id === `${n}` ? text.classList.add("show") : text.classList.remove("show"))
+  };
+</script>

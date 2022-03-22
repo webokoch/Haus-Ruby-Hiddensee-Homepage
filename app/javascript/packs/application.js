@@ -18,6 +18,7 @@ require("channels")
 
 import {initTest} from "../packs/my_js";
 import {initBannerAutoSlide} from "../packs/banner_auto_slide";
+// import {initSwitch} from "../packs/switch"
 
 document.addEventListener('turbolinks:load', () => {
     // Call your functions here, e.g:
