@@ -1,0 +1,51 @@
+.css-slides {
+    position: relative; 
+    height: 0;
+    padding-bottom: 75vh;
+    overflow: hidden;
+    display: block;
+}
+.fade {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 0;
+    right: 0;   
+}
+.auto-slide1 {
+    background-image: url("Aussen1.jpg");
+    background-attachment: scroll;
+    animation-delay: 0s;
+}
+.auto-slide2 {
+    background-image: url("Wohnzimmer2.jpg");
+    background-attachment: scroll;
+    animation-delay: 5s;
+}
+.auto-slide3 {
+    background-image: url("Schlafzimmer1.jpg");
+    background-attachment: scroll;
+    animation-delay: 10s;
+}
+.auto-slide4 {
+    background-image: url("Gallerie1.jpg");
+    background-attachment: scroll;
+    animation-delay: 15s;
+}
+@-webkit-keyframes fade {
+    0% {opacity: 0;} 
+    10% {opacity: 1;}
+    25% {opacity: 1;}
+    35% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade {
+    0% {opacity: 0;} 
+    10% {opacity: 1;}
+    25% {opacity: 1;}
+    35% {opacity: 0;}
+    100% {opacity: 0;}
+}
