@@ -1,0 +1,109 @@
+header {
+    margin: 0;
+    background-color: $color4;
+    padding: 0;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $color4;
+    padding: 0;
+    z-index: 100;
+  }
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-between;
+}
+nav img {
+    max-width: 100px;
+    object-fit: cover;
+    padding: 1rem 0;
+}
+nav li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.15rem;
+}
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+nav li:first-child a {
+    background-color: transparent;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: $color3;
+    border-radius: 5px;
+}
+nav a:hover {
+    background-color: $color5;
+    color: $color1;
+}
+
+@media (min-width: 550px) {
+    nav ul {
+        justify-content: center;
+        gap: 1.2em;
+    }
+    nav li {
+        flex-basis: auto;
+        margin-bottom: 0;
+    }
+    nav a {
+        color: var(--color2);
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    nav a:hover {
+        color: var(--color1);
+        background-color: transparent;
+    }
+    nav li:first-child a{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 800px) {
+     header { 
+         height: 100px;
+     }
+     nav a {
+         margin-bottom: 0;
+     }
+     nav ul {
+         justify-content: space-around;
+         align-items: center;
+         margin: 0 7rem;
+         gap: 8%;
+     }
+     nav img {
+         max-width: none;
+         min-width: 80px;
+     }
+     nav li:first-child {
+         flex-basis: auto;
+         margin: 0 auto;
+         order: 2;
+     }
+     nav li:nth-child(2),
+     nav li:nth-child(3) {
+         order: 1;
+     }
+     nav li:nth-child(4),
+     nav li:nth-child(5) {
+         order: 3;
+     }
+}
