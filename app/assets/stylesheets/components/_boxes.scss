@@ -1,0 +1,14 @@
+.boxes {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 550px) {
+    .boxes {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2%;
+    }
+}

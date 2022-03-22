@@ -2,16 +2,32 @@ html {
     box-sizing: border-box;
     font-family: $font;
 }
-
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-
 body {
     font-family: $font;
-    background-color: $color2;
+    background-color: white;
     padding: 0;
     margin: 0;
+}
+section h2, 
+section h1 {
+    margin: 0;
+    letter-spacing: 0.2rem;
+    color: $color2;
+}
+section .title {
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    background-color: $color5;
+    height: 80px;
+    width: 100%;
+}
+section .content {
+    margin: 0 auto 0 auto;
+    padding: 5rem 3rem;
 }
