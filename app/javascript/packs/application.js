@@ -15,3 +15,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import {initTest} from "../packs/my_js";
+
+document.addEventListener('turbolinks:load', () => {
+    // Call your functions here, e.g:
+    initTest();
+  });
