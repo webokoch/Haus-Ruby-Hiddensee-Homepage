@@ -1,0 +1,60 @@
+.house-btn {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    background-color: $color4;
+    border: none;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+}
+.info-text {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.active {
+    background-color: $color5;
+}
+
+.info-card {
+    display: none;
+    overflow: hidden;
+}
+
+.image-floated {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    float: top;
+    margin: 2em 1em 0 0;
+}
+
+.show {
+    display: block;
+}
+
+@media (min-width: 550px) {
+    .house {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .house-btn {
+        flex-basis: 25%;
+    }
+    .image-floated {
+        width: 25%;
+        height: 45vh;
+        object-fit: cover;
+        object-position: center;
+        float: left;
+        margin: 2em 1em 0 0;
+    }
+}
