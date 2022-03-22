@@ -17,11 +17,13 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import {initTest} from "../packs/my_js";
+import { initNavbar } from "./navbar";
 import {initBannerAutoSlide} from "../packs/banner_auto_slide";
 // import {initSwitch} from "../packs/switch"
 
 document.addEventListener('turbolinks:load', () => {
     // Call your functions here, e.g:
     initTest();
+    initNavbar();
     initBannerAutoSlide();
   });
