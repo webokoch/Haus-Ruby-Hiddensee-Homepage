@@ -1,0 +1,22 @@
+.booking { 
+    display: flex;
+    border: 1px solid $color4;
+    border-radius: 4rem;
+    padding: 2rem 3rem;
+    max-width: 40vw;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 2rem;
+    text-decoration: none;
+    color: $color4;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    transition: font-size 1s;
+}
+
+.booking:hover {
+    color: white;
+    font-size: 2.2rem ;
+    background-color: $color4;
+}
