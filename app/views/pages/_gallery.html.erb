@@ -1,106 +1,142 @@
-<div class="gallery">
-    <div class="gallery-image">
-      <%= image_tag "Aussen1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(1)" %>
+
+  <div class="gallery-image">
+    <%= image_tag "Aussen1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(1)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Aussen2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(2)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Wohnzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(3)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Wohnzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(4)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Wohnzimmer3.jpg", class: "cursor", :onClick  => "openModal();currentSlide(5)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Küche1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(6)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Küche2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(7)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Schlafzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(8)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Schlafzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(9)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Kinderzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(10)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Kinderzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(11)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Wannenbad.jpg", class: "cursor", :onClick  => "openModal();currentSlide(12)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Gallerie1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(13)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Gallerie2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(14)" %>
+  </div>
+  <div class="gallery-image" id="hidden-tablet">
+    <%= image_tag "Gallerie3.jpg", class: "cursor", :onClick  => "openModal();currentSlide(15)" %>
+  </div>
+  <div class="gallery-image">
+    <%= image_tag "Gallerie4.jpg", class: "cursor", :onClick  => "openModal();currentSlide(16)" %>
+  </div>
+<div id="modal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="modal-image">
+      <%= image_tag "Aussen1.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Aussen2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(2)" %>
+    <div class="modal-image">
+      <%= image_tag "Aussen2.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Wohnzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(3)" %>
+    <div class="modal-image">
+      <%= image_tag "Wohnzimmer1.jpg" %>
+    </div>    
+    <div class="modal-image">
+      <%= image_tag "Wohnzimmer2.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Wohnzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(4)" %>
+    <div class="modal-image">
+      <%= image_tag "Wohnzimmer3.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Wohnzimmer3.jpg", class: "cursor", :onClick  => "openModal();currentSlide(5)" %>
+    <div class="modal-image">
+      <%= image_tag "Küche1.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Küche1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(6)" %>
+    <div class="modal-image">
+      <%= image_tag "Küche2.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Küche2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(7)" %>
+    <div class="modal-image">
+      <%= image_tag "Schlafzimmer1.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Schlafzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(8)" %>
+    <div class="modal-image">
+      <%= image_tag "Schlafzimmer2.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Schlafzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(9)" %>
+    <div class="modal-image">
+      <%= image_tag "Kinderzimmer1.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Kinderzimmer1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(10)" %>
+    <div class="modal-image">
+      <%= image_tag "Kinderzimmer2.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Kinderzimmer2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(11)" %>
+    <div class="modal-image">
+      <%= image_tag "Wannenbad.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Wannenbad.jpg", class: "cursor", :onClick  => "openModal();currentSlide(12)" %>
+    <div class="modal-image">
+      <%= image_tag "Gallerie1.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Gallerie1.jpg", class: "cursor", :onClick  => "openModal();currentSlide(13)" %>
+    <div class="modal-image">
+      <%= image_tag "Gallerie2.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Gallerie2.jpg", class: "cursor", :onClick  => "openModal();currentSlide(14)" %>
+    <div class="modal-image">
+      <%= image_tag "Gallerie3.jpg" %>
     </div>
-    <div class="gallery-image" id="hidden-tablet">
-      <%= image_tag "Gallerie3.jpg", class: "cursor", :onClick  => "openModal();currentSlide(15)" %>
+    <div class="modal-image">
+      <%= image_tag "Gallerie4.jpg" %>
     </div>
-    <div class="gallery-image">
-      <%= image_tag "Gallerie4.jpg", class: "cursor", :onClick  => "openModal();currentSlide(16)" %>
-    </div>
-  <div id="modal" class="modal">
-    <span class="close cursor" onclick="closeModal()">&times;</span>
-    <div class="modal-content">
-      <div class="modal-image">
-        <%= image_tag "Aussen1.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Aussen2.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Wohnzimmer1.jpg" %>
-      </div>    
-      <div class="modal-image">
-        <%= image_tag "Wohnzimmer2.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Wohnzimmer3.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Küche1.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Küche2.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Schlafzimmer1.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Schlafzimmer2.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Kinderzimmer1.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Kinderzimmer2.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Wannenbad.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Gallerie1.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Gallerie2.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Gallerie3.jpg" %>
-      </div>
-      <div class="modal-image">
-        <%= image_tag "Gallerie4.jpg" %>
-      </div>
-          <a class="prev" onclick="plusImages(-1)">&#10094;</a>
-          <a class="next" onclick="plusImages(1)">&#10095;</a>
-      </div>
+    <div>
+        <a class="prev" onclick="plusImages(-1)">&#10094;</a>
+        <a class="next" onclick="plusImages(1)">&#10095;</a>
     </div>
   </div>
 </div>
+<script>
+  function openModal() {
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
+
+var imageIndex = 1;
+showImages(imageIndex);
+
+function plusImages(n) {
+    showImages(imageIndex += n);
+}
+
+function currentSlide(n) {
+    showImages(imageIndex = n);
+}
+
+function showImages(n) {
+    var i;
+    var images = document.getElementsByClassName("modal-image");
+    if (n > images.length) {
+        imageIndex = 1
+    } else if (n < 1) {
+        imageIndex = images.length
+    } else {
+        imageIndex = n
+    }
+    for (i = 0; i < images.length; i++) {
+        images[i].style.display = "none";
+    }
+    images[imageIndex-1].style.display = "block";
+}
+</script>

@@ -1,0 +1,75 @@
+.gallery {
+    display: none;
+}
+.gallery-image{
+    object-fit: cover;
+    width: 100%;
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    padding-top: 60px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+}
+.modal-image{
+    display: none;
+}
+.gallery-image img,
+.modal-image img {
+    width: 100%;
+}
+.active {
+    opacity: 1;
+}
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media (min-width: 550px) {
+    .gallery {
+        flex-basis: 47%;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 2%;
+    }
+    #hidden-tablet {
+        display: none;
+    }
+}
+@media (min-width: 800px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #hidden-tablet {
+        display: unset;
+    }
+}

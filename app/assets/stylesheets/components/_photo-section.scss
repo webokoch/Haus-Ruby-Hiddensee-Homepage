@@ -1,0 +1,11 @@
+#photos {
+    margin-bottom: 0;
+}
+@media (min-width: 550px) {
+    .photo-section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
