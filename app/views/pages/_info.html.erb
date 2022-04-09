@@ -7,10 +7,10 @@
           Reihenhäusern. Haus Ruby ist ein Richtung Südwesten ausgerichtetes Reihenendhaus, das von der Strasse etwas zurückversetzt liegt. Zusätzlich gewährt eine Hecke grössenteils Sichtschutz. Für alle Häuser gibt es eine große gemeinschaftliche Wiese zum Spielen und ein Häuschen mit Waschmaschine und Trockner (gegen Gebühr).
       </p>
       <div class="house">
-        <button data-id="1" class="house-btn active" onClick="switchText(1)">Terrassen</button>
-        <button data-id="2" class="house-btn" onClick="switchText(2)">Erdgeschoss</button>
-        <button data-id="3" class="house-btn" onClick="switchText(3)">Obergeshoss</button>
-        <button data-id="4" class="house-btn" onClick="switchText(4)">Galerie</button>
+        <button data-id="1" class="house-btn active">Terrassen</button>
+        <button data-id="2" class="house-btn">Erdgeschoss</button>
+        <button data-id="3" class="house-btn">Obergeshoss</button>
+        <button data-id="4" class="house-btn">Galerie</button>
       </div>
       <div class="info-details">
         <div data-id="1" class="info-card show">
@@ -49,16 +49,3 @@
       </div>
   </div>
 </section>
-
-<script>
-  function switchText(n) {
-    var buttons = document.getElementsByClassName("house-btn")
-    var texts = document.getElementsByClassName("info-card")
-
-    Array.from(buttons).map(button => 
-        button.dataset.id === `${n}` ? button.classList.add("active") : button.classList.remove("active"))
-
-    Array.from(texts).map(text => 
-        text.dataset.id === `${n}` ? text.classList.add("show") : text.classList.remove("show"))
-  };
-</script>
