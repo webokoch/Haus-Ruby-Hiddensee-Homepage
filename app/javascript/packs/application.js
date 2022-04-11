@@ -19,10 +19,12 @@ require("channels")
 import { initNavbar } from "../components/navbar";
 import { initSwitch } from "../components/switch";
 import { initSlideShow } from "../components/slideshow";
+import { initGallery } from "../components/gallery";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initSwitch();
   initSlideShow();
   initNavbar();
+  initGallery();
 });

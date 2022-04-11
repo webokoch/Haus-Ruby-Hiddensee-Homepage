@@ -1,7 +1,7 @@
 const initSwitch = () => {
 
-  var buttons = document.getElementsByClassName("house-btn")
-  var texts = document.getElementsByClassName("info-card")
+  var buttons = document.getElementsByClassName("house-btn");
+  var texts = document.getElementsByClassName("info-card");
 
   Array.from(buttons).map(btn => {
     btn.addEventListener('click', (event) =>  {
@@ -10,7 +10,8 @@ const initSwitch = () => {
       Array.from(texts).map(text => 
           text.dataset.id === event.target.dataset.id ? text.classList.add("show") : text.classList.remove("show"))
     })
-  })
+  });
+
 };
 
 export {initSwitch};
