@@ -17,12 +17,14 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import { initNavbar } from "./navbar";
-import {initBannerAutoSlide} from "./banner_auto_slide";
-import {initSwitch} from "./switch";
+import { initBannerAutoSlide } from "./banner_auto_slide";
+import { initSwitch } from "./switch";
+import { initSlideShow } from "./slideshow";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   initSwitch();
+  initSlideShow();
   initNavbar();
   initBannerAutoSlide();
 });
