@@ -16,9 +16,9 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
-import { initNavbar } from "./navbar";
-import { initSwitch } from "./switch";
-import { initSlideShow } from "./slideshow";
+import { initNavbar } from "../components/navbar";
+import { initSwitch } from "../components/switch";
+import { initSlideShow } from "../components/slideshow";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
