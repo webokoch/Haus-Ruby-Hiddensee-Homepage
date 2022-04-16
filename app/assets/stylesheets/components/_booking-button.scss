@@ -1,22 +1,33 @@
-.booking { 
-    display: flex;
-    border: 1px solid $color4;
-    border-radius: 4rem;
-    padding: 2rem 3rem;
-    max-width: 40vw;
-    align-items: center;
+.booking {
+    display: flex; 
     justify-content: center;
-    margin: auto;
-    font-size: 2rem;
+    align-items: center;
     text-decoration: none;
     color: $color4;
+    border: 1px solid $color4;
+    border-radius: 4rem;
+    max-width: 60vw;
+    margin: auto;
+    font-size: 1rem;
+    padding: 1.5rem 2.5rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
     transition: font-size 1s;
-    
+
     &:hover {
         color: white;
-        font-size: 2.2rem ;
+        font-size: 1.2rem;
         background-color: $color4;
     }
+}
+
+@media (min-width: 550px) {
+    .booking {
+        max-width: 40vw;
+        font-size: 1.25rem;
+
+        &:hover {
+            font-size: 1.5rem;
+        }  
+    } 
 }
