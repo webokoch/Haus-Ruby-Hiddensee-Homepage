@@ -15,22 +15,16 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: space-between;
 }
 nav img {
     max-width: 100px;
     object-fit: cover;
-    padding: 1rem 0;
 }
 nav li {
-    flex-basis: 48%;
-    margin-bottom: 0.5rem;
-    letter-spacing: 0.15rem;
+    display: none;
 }
 nav li:first-child {
+    display: block;
     flex-basis: 100%;
     text-align: center;
 }
@@ -53,13 +47,21 @@ nav a:hover {
 }
 
 @media (min-width: 550px) {
+    nav img {
+        padding: 0.75rem 0;
+    }
     nav ul {
-        justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
         gap: 1.2em;
     }
     nav li {
+        display: flex;
         flex-basis: auto;
         margin-bottom: 0;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.15rem;
     }
     nav a {
         color: var(--color2);
