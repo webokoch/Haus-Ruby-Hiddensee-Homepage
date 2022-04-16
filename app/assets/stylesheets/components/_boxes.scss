@@ -11,4 +11,14 @@
         align-items: center;
         gap: 2%;
     }
+
+    #card-hidden {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    #card-hidden {
+        display: block;
+    }
 }
