@@ -50,6 +50,13 @@
         flex-basis: 25%;
     }
     .image-floated {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .image-floated {
+        display: block;
         width: 25%;
         height: 45vh;
         object-fit: cover;
