@@ -1,0 +1,8 @@
+.link-style {
+    text-decoration: none;
+    color: $color5;
+
+    &:hover {
+        color: $color3;
+    }
+}
