@@ -40,7 +40,7 @@
     display: block;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 576px) {
     .house {
         display: flex;
         justify-content: center;
@@ -54,10 +54,10 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .image-floated {
         display: block;
-        width: 25%;
+        width: 40%;
         height: 45vh;
         object-fit: cover;
         object-position: center;

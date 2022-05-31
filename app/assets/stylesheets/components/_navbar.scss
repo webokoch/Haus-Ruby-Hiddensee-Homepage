@@ -46,7 +46,7 @@ nav a:hover {
     color: $color1;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 576px) {
     nav img {
         padding: 0.75rem 0;
     }
@@ -78,7 +78,7 @@ nav a:hover {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
      header { 
          height: 100px;
      }

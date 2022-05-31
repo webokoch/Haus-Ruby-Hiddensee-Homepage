@@ -45,12 +45,12 @@
     bottom: -6px;
     width: 100%;
 }
-@media (min-width: 550px) {
+@media (min-width: 576px) {
     .slideshow {
        display: none;
     }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
     .slideshow {
         display: block;
         flex-basis: 47%;
