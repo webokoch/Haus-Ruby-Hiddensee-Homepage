@@ -7,9 +7,29 @@
         Betreut und verwaltet wird Haus Ruby von <%= link_to  "Hiddensezimmer", "https://www.hiddenseezimmer.de", class: "link-style", target: "_blank" %>. 
         Die freundlichen Damen und Herren von Hiddenseezimmer arbeiten seit vielen Jahren in der Objektbetreung und Zimmervermittlung vor Ort auf Hiddensee und sind 
         Ihr zuverlässiger Ansprechpartner rund um Ihren Urlaub im Haus Ruby. Haben Sie noch Fragen zu Haus Ruby oder möchten Sie direkt eine Buchungsanfrage 
-        stellen? Über den unten aufegführten Link, können Sie sich direkt an Hiddenseezimmer wenden. Hier erfahren Sie alles über 
-        <%= link_to "Peise und Saisonzeiten", "https://www.hiddenseezimmer.de/Saisonzeiten", class: "link-style", target: "_blank"  %>.
+        stellen? Über den unten aufegführten Link, können Sie sich direkt an Hiddenseezimmer wenden. Hier erfahren Sie alles über die
+        <%= link_to "Saisonzeiten", "https://www.hiddenseezimmer.de/Saisonzeiten", class: "link-style", target: "_blank"  %> auf Hiddensee.
     </p>
-    <%= link_to "Buchungsanfrage",  "https://www.hiddenseezimmer.de/Buchungsanfrage/Haus-Ruby", class: "booking",  target: "_blank" %>
+    <div class="boxes boxes-booking">
+      <div class="card card-booking">
+          <p>59€</p>
+          <p>Vorsaison</p>
+      </div>
+      <div class="card card-booking">
+          <p>99€</p>
+          <p>Nebensaison</p>
+      </div>
+      <div class="card card-booking">
+          <p>145€</p>
+          <p>Zwischensaison</p>
+      </div>
+      <div class="card card-booking">
+          <p>185€</p>
+          <p>Hauptsaison</p>  
+      </div>
+    </div>
+    <p>
+      <%= link_to "Buchungsanfrage",  "https://www.hiddenseezimmer.de/Buchungsanfrage/Haus-Ruby", class: "booking",  target: "_blank" %>
+    </p>
   </div>
 </section>
